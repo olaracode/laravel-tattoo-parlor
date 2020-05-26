@@ -25,6 +25,9 @@ Route::get('/microblading', function () {
 Route::get('/monza', function () {
     return view('monza');
 });
+Route::get('/galeria', function () {
+    return view('galeria');
+});
 
 Auth::routes();
 

@@ -101,7 +101,7 @@
 						<a href="#" class="image"><img src="/images/pic10.jpg" alt="" /></a>
 					</div>
 					<ul class="actions">
-						<li><a href="#" class="button big alt">Ir</a></li>
+						<li><a href="{{ ('galeria') }}" class="button big alt">Ir</a></li>
 					</ul>
 				</div>
 			</section>
