@@ -19,14 +19,17 @@ Route::get('admin', function () {
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/microblading', function () {
+Route::get('/Microblading', function () {
     return view('micb');
 });
-Route::get('/monza', function () {
+Route::get('/Monza', function () {
     return view('monza');
 });
 Route::get('/galeria', function () {
     return view('galeria');
+});
+Route::get('/presupuesto', function(){
+    return view('presupuesto');
 });
 
 Auth::routes();

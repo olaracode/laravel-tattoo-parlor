@@ -26,12 +26,31 @@
                         @enderror
                     </div>
                     <div class="12u$">
-                        <input type="text" name="estilo" id="estilo" value="" placeholder="Estilo">
-                        @error('estilo')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
+                        <div class="select-wrapper">
+                            <select name="estilo">
+                                <option value="">- Estilo -</option>
+                                <option value="Realismo Escala de Grises">Realismo Escala de Grises</option>
+                                <option value="Realismo a Color">Realismo a Color</option>
+                                <option value="Trash Polka">Trash Polka</option>
+                                <option value="Tribal">Tribal</option>
+                                <option value="Japones/Irezumi">Japones/Irezumi</option>
+                                <option value="Old School">Old School</option>
+                                <option value="New School">New School</option>
+                                <option value="Neotradicional">Neotradicional</option>
+                                <option value="Acuarela">Acuarela</option>
+                                <option value="Puntillismo">Puntillismo</option>
+                                <option value="Geometrico">Geometricos</option>
+                                <option value="Blackwork">Blackwork</option>
+                                <option value="Biomecanicos">Biomecanicos</option>
+                                <option value="Linea Simple">Linea Simple</option>
+                                <option value="Flash">Flash</option>
+                            </select>
+                            @error('estilo')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                               </span>
+                            @enderror
+                        </div>
                     </div>
 
                     <div class="12u$">

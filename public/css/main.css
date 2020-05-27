@@ -2181,6 +2181,12 @@
 		}
 
 /* Image */
+#image{
+	object-fit: cover;
+	height: 117px;
+	width: 256px;
+
+}
 	.image {
 		border-radius: 0;
 		border: 0;

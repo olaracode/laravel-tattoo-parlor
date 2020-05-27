@@ -26,7 +26,7 @@
     <ul class="links">
         <li><a href="{{ ('/') }}">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
-        <li><a href="#">Galeria</a></li>
+        <li><a href="{{ ('galeria') }}">Galeria</a></li>
     </ul>
 </nav>
 

@@ -27,9 +27,9 @@
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="links">
-					<li><a href="home.blade.php">Inicio</a></li>
+					<li><a href="{{ ('/') }}">Inicio</a></li>
 					<li><a href="{{ ('/microblading')  }}">Servicios</a></li>
-					<li><a href="elements.html">Galeria</a></li>
+					<li><a href="{{ ('/galeria') }}">Galeria</a></li>
 				</ul>
 			</nav>
 
@@ -91,14 +91,18 @@
 						<h2>Galeria</h2>
 					</header>
 					<div class="image-grid">
-						<a href="#" class="image"><img src="/images/pic03.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="/images/pic04.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="/images/pic05.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="/images/pic06.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="/images/pic07.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="/images/pic08.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="/images/pic09.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="/images/pic10.jpg" alt="" /></a>
+						<?php
+							$x = 0;
+							$tatuajes = App\Tattoo::all(	);
+						?>
+						@foreach($tatuajes as $tatuaje)
+							@if($x == 8)
+								@break
+							@else
+								<a href="#" ><img id="image" src="/storage/{{ $tatuaje->image }}" alt=""/></a>
+								<?php $x++; ?>
+							@endif
+						@endforeach
 					</div>
 					<ul class="actions">
 						<li><a href="{{ ('galeria') }}" class="button big alt">Ir</a></li>
@@ -113,7 +117,7 @@
 						<h2>Reservaciones y Presupuestos</h2>
 					</header>
 					<ul class="actions">
-						<li><a href="#" class="button big alt">Más</a></li>
+						<li><a href="{{ ('/presupuesto') }}" class="button big alt">Más</a></li>
 					</ul>
 				</div>
 			</section>
