@@ -14,8 +14,9 @@
                 </div>
                 <div class="4u" align="center">
                     <span class="image fit"><img src="/images/agenda.jpg"></span>
-                    <a href="#">Agenda</a>
+                    <a href="{{ ('/agenda') }}">Agenda</a>
                 </div>
             </div>
         </div>
     </section>
+    @endsection

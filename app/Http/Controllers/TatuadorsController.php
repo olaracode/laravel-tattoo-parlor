@@ -18,6 +18,7 @@ class TatuadorsController extends Controller
     {
         $data = request()->validate([
            'nombre' => 'required',
+            'especialidad' => 'required',
         ]);
 
         \App\Tatuador::create($data);

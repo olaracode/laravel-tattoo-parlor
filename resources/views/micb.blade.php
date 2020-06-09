@@ -13,8 +13,8 @@
 					<h2 align="left">
 						Resultados
 					</h2>
-					<p align="justify">
-						<span class="image left"><img src="/images/mic2.png" alt="" style="width: 200px; height: 200px;"/></span>
+					<p>
+						<span class="image left"><img src="/images/mic2.png" alt="" style="max-width: 200px;"/></span>
 						El microblading no implica el uso de máquinas eléctricas y, a diferencia de otros tratamientos
 						de maquillaje permanente como la micropigmentación, implica un trazado individual para cada pelo
 						de la ceja, buscando un resultado más natural que los tatuajes o técnicas de maquillaje
@@ -31,7 +31,7 @@
 					</h2>
 					<p align="justify">
 						<span class="image right">
-							<img src="/images/mic3.jpg" alt="" style="width: 200px; height: 200px; "/>
+							<img src="/images/mic3.jpg" alt="" style="max-width: 200px;"/>
 						</span>
 						El microblading es un tipo de técnica de tatuaje. El pigmento se deposita en la dermis para que
 						dure en el tiempo. Como todos los demás tatuajes puede desvanecerse dependiendo de múltiples

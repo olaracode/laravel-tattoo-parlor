@@ -10,6 +10,15 @@
                         <input type="text" name="nombre" id="nombre" value="" placeholder="Nombre del tatuador">
                     </div>
                     <div class="12u$">
+                        <div class="select-wrapper">
+                            <select name="especialidad">
+                                <option value="">- Especialidad -</option>
+                                <option value="Tatuador">Tatuador</option>
+                                <option value="Microblading">Microblading</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="12u$">
                         <ul class="actions">
                             <li><input type="submit" value="Guardar" class="special" /></li>
                             <li><input type="reset" value="Resetear" /></li>

@@ -90,20 +90,20 @@
 					<header class="major narrow">
 						<h2>Galeria</h2>
 					</header>
-					<div class="image-grid">
-						<?php
-							$x = 0;
-							$tatuajes = App\Tattoo::all(	);
-						?>
-						@foreach($tatuajes as $tatuaje)
-							@if($x == 8)
-								@break
-							@else
-								<a href="#" ><img id="image" src="/storage/{{ $tatuaje->image }}" alt=""/></a>
-								<?php $x++; ?>
-							@endif
-						@endforeach
+					<div class="box alt">
+						<div class="row 50% uniform">
+							<div class="4u"><span class="image fit"><img src="/images/pic01.jpg" alt="" /></span></div>
+							<div class="4u"><span class="image fit"><img src="/images/pic02.jpg" alt="" /></span></div>
+							<div class="4u$"><span class="image fit"><img src="/images/img2.jpeg" alt="" /></span></div>
+							<div class="4u"><span class="image fit"><img src="/images/pic05.jpg" alt="" /></span></div>
+							<div class="4u"><span class="image fit"><img src="/images/pic03.jpg" alt="" /></span></div>
+							<div class="4u$"><span class="image fit"><img src="/images/pic04.jpg" alt="" /></span></div>
+							<div class="4u"><span class="image fit"><img src="/images/pic06.jpg" alt="" /></span></div>
+							<div class="4u"><span class="image fit"><img src="/images/pic07.jpg" alt="" /></span></div>
+							<div class="4u$"><span class="image fit"><img src="/images/pic08.jpg" alt="" /></span></div>
+						</div>
 					</div>
+
 					<ul class="actions">
 						<li><a href="{{ ('galeria') }}" class="button big alt">Ir</a></li>
 					</ul>

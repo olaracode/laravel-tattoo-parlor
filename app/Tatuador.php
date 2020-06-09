@@ -11,4 +11,8 @@ class Tatuador extends Model
     {
         return $this->hasMany(Tattoo::class);
     }
+    public function citas()
+    {
+        return $this->hasMany(Cita::class);
+    }
 }

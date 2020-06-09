@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTattooArtist extends Migration
+class CreateCitasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,16 @@ class CreateTattooArtist extends Migration
      */
     public function up()
     {
-        Schema::create('tatuadors', function (Blueprint $table) {
+        Schema::create('citas', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->string('especialidad');
+            $table->unsignedInteger('tatuador_id');
+            $table->text('cliente');
+            $table->text('descripcion');
+            $table->integer('precio');
+            $table->integer('pago');
+            $table->text('fecha');
             $table->timestamps();
+            $table->index('tatuador_id');
         });
     }
 
@@ -28,6 +33,6 @@ class CreateTattooArtist extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tattoo_artist');
+        Schema::dropIfExists('citas');
     }
 }

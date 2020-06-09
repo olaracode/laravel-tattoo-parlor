@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create.blade.php something great!
+| contains the "web" middleware group. Now createt.blade.php something great!
 |
 */
 
@@ -41,3 +41,12 @@ Route::get('/tatuadores/createtatuadores', 'TatuadorsController@create');
 Route::post('/tatuadores', 'TatuadorsController@store');
 
 Route::get('/welcome', 'HomeController@index')->name('home');
+
+Route::get('/citas/crear', 'CitasController@create');
+Route::post('/citas', 'CitasController@store');
+Route::patch('/citas/{cita}', 'CitasController@update');
+Route::get('/citas/{cita}/edit', 'CitasController@edit');
+
+Route::get('/agenda', function (){
+    return view('agenda');
+});

@@ -13,7 +13,6 @@
                 y concretar entre los dos el diseño final.
             </p>
             <div align="center">
-                <h2 align="center">Imagenes con precios referenciales</h2>
                 <div class="row" style="margin-left: 30%;">
                     <br>
                     <div class="-4u(xsmall)">

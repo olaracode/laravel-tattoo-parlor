@@ -29,6 +29,7 @@
                         <div class="select-wrapper">
                             <select name="estilo">
                                 <option value="">- Estilo -</option>
+                                <option value="Microblading">Microblading</option>
                                 <option value="Realismo Escala de Grises">Realismo Escala de Grises</option>
                                 <option value="Realismo a Color">Realismo a Color</option>
                                 <option value="Trash Polka">Trash Polka</option>
